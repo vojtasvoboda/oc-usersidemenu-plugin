@@ -1,0 +1,5 @@
+plugin:
+    name: User SideMenu
+    description: 'Provide sidemenu for RainLab.User plugin'
+    author: 'Vojta Svoboda'
+    icon: icon-user
