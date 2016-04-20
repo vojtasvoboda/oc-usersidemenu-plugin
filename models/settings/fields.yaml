@@ -1,0 +1,330 @@
+tabs:
+    fields:
+
+        base_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.base.enabled
+        base_label:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            default: Users
+            required: true
+            trigger:
+                action: show
+                field: base_enabled
+                condition: checked
+        base_icon:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            default: icon-user
+            required: true
+            trigger:
+                action: show
+                field: base_enabled
+                condition: checked
+        base_order:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 500
+            required: true
+            trigger:
+                action: show
+                field: base_enabled
+                condition: checked
+        base_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            default: rainlab.users.*
+            required: true
+            trigger:
+                action: show
+                field: base_enabled
+                condition: checked
+        base_url:
+            tab: vojtasvoboda.usersidemenu::lang.base.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/users
+            required: true
+            trigger:
+                action: show
+                field: base_enabled
+                condition: checked
+
+        first_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.first.enabled
+        first_label:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            default: Add user
+            required: true
+            trigger:
+                action: show
+                field: first_enabled
+                condition: checked
+        first_icon:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            default: icon-plus
+            required: true
+            trigger:
+                action: show
+                field: first_enabled
+                condition: checked
+        first_order:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 100
+            required: true
+            trigger:
+                action: show
+                field: first_enabled
+                condition: checked
+        first_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            default: rainlab.users.access_users
+            required: true
+            trigger:
+                action: show
+                field: first_enabled
+                condition: checked
+        first_url:
+            tab: vojtasvoboda.usersidemenu::lang.first.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/users/create
+            required: true
+            trigger:
+                action: show
+                field: first_enabled
+                condition: checked
+
+        second_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.second.enabled
+            default: true
+        second_label:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            default: Users
+            required: true
+            trigger:
+                action: show
+                field: second_enabled
+                condition: checked
+        second_icon:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            default: icon-user
+            required: true
+            trigger:
+                action: show
+                field: second_enabled
+                condition: checked
+        second_order:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 200
+            required: true
+            trigger:
+                action: show
+                field: second_enabled
+                condition: checked
+        second_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            default: rainlab.users.access_users
+            required: true
+            trigger:
+                action: show
+                field: second_enabled
+                condition: checked
+        second_url:
+            tab: vojtasvoboda.usersidemenu::lang.second.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/users
+            required: true
+            trigger:
+                action: show
+                field: second_enabled
+                condition: checked
+                
+        third_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.third.enabled
+            default: true
+        third_label:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            default: Groups
+            required: true
+            trigger:
+                action: show
+                field: third_enabled
+                condition: checked
+        third_icon:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            default: icon-group
+            required: true
+            trigger:
+                action: show
+                field: third_enabled
+                condition: checked
+        third_order:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 300
+            required: true
+            trigger:
+                action: show
+                field: third_enabled
+                condition: checked
+        third_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            default: rainlab.users.access_groups
+            required: true
+            trigger:
+                action: show
+                field: third_enabled
+                condition: checked
+        third_url:
+            tab: vojtasvoboda.usersidemenu::lang.third.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/usergroups
+            required: true
+            trigger:
+                action: show
+                field: third_enabled
+                condition: checked
+                
+        fourth_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.fourth.enabled
+        fourth_label:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            required: true
+            trigger:
+                action: show
+                field: fourth_enabled
+                condition: checked
+        fourth_icon:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            required: true
+            trigger:
+                action: show
+                field: fourth_enabled
+                condition: checked
+        fourth_order:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 400
+            required: true
+            trigger:
+                action: show
+                field: fourth_enabled
+                condition: checked
+        fourth_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            required: true
+            default: rainlab.users.*
+            trigger:
+                action: show
+                field: fourth_enabled
+                condition: checked
+        fourth_url:
+            tab: vojtasvoboda.usersidemenu::lang.fourth.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/users
+            required: true
+            trigger:
+                action: show
+                field: fourth_enabled
+                condition: checked
+                
+        fifth_enabled:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            type: switch
+            label: vojtasvoboda.usersidemenu::lang.fifth.enabled
+        fifth_label:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.label
+            required: true
+            trigger:
+                action: show
+                field: fifth_enabled
+                condition: checked
+        fifth_icon:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            span: right
+            type: dropdown
+            label: vojtasvoboda.usersidemenu::lang.icon
+            required: true
+            trigger:
+                action: show
+                field: fifth_enabled
+                condition: checked
+        fifth_order:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            span: left
+            label: vojtasvoboda.usersidemenu::lang.order
+            default: 500
+            required: true
+            trigger:
+                action: show
+                field: fifth_enabled
+                condition: checked
+        fifth_permissions:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            span: right
+            label: vojtasvoboda.usersidemenu::lang.permissions
+            required: true
+            default: rainlab.users.*
+            trigger:
+                action: show
+                field: fifth_enabled
+                condition: checked
+        fifth_url:
+            tab: vojtasvoboda.usersidemenu::lang.fifth.tab
+            label: vojtasvoboda.usersidemenu::lang.url
+            default: rainlab/user/users
+            required: true
+            trigger:
+                action: show
+                field: fifth_enabled
+                condition: checked
