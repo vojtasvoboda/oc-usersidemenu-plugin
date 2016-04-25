@@ -7,8 +7,8 @@ return [
     ],
 
     'settings' => [
-        'label' => '',
-        'description' => '',
+        'label' => 'User Side Menu',
+        'description' => 'Settings for User Side Menu',
     ],
 
     'label' => 'Icon label',
