@@ -16,12 +16,12 @@ class Settings extends Model
     public $settingsFields = 'fields.yaml';
 
     public $rules = [
-        'base_order' => 'numeric',
-        'first_order' => 'numeric',
+        'base_order'   => 'numeric',
+        'first_order'  => 'numeric',
         'second_order' => 'numeric',
-        'third_order' => 'numeric',
+        'third_order'  => 'numeric',
         'fourth_order' => 'numeric',
-        'fifth_order' => 'numeric',
+        'fifth_order'  => 'numeric',
     ];
 
     /**
@@ -50,10 +50,10 @@ class Settings extends Model
         }
 
         return [
-            'label' => self::get($ident . '_label', 'Add user'),
-            'url' => self::get($ident . '_url', 'rainlab/user/users/create'),
-            'order' => self::get($ident . '_order', 100),
-            'icon' => self::get($ident . '_icon', 'icon-plus'),
+            'label'       => self::get($ident . '_label', 'rainlab.user::lang.users.new_user'),
+            'url'         => self::get($ident . '_url', 'rainlab/user/users/create'),
+            'order'       => self::get($ident . '_order', 100),
+            'icon'        => self::get($ident . '_icon', 'icon-plus'),
             'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_users'),
         ];
     }
@@ -72,10 +72,10 @@ class Settings extends Model
         }
 
         return [
-            'label' => self::get($ident . '_label', 'Users'),
-            'url' => self::get($ident . '_url', 'rainlab/user/users'),
-            'order' => self::get($ident . '_order', 200),
-            'icon' => self::get($ident . '_icon', 'icon-user'),
+            'label'       => self::get($ident . '_label', 'rainlab.user::lang.users.menu_label'),
+            'url'         => self::get($ident . '_url', 'rainlab/user/users'),
+            'order'       => self::get($ident . '_order', 200),
+            'icon'        => self::get($ident . '_icon', 'icon-user'),
             'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_users'),
         ];
     }
@@ -94,10 +94,10 @@ class Settings extends Model
         }
 
         return [
-            'label' => self::get($ident . '_label', 'Groups'),
-            'url' => self::get($ident . '_url', 'rainlab/user/usergroups'),
-            'order' => self::get($ident . '_order', 300),
-            'icon' => self::get($ident . '_icon', 'icon-group'),
+            'label'       => self::get($ident . '_label', 'rainlab.user::lang.groups.menu_label'),
+            'url'         => self::get($ident . '_url', 'rainlab/user/usergroups'),
+            'order'       => self::get($ident . '_order', 300),
+            'icon'        => self::get($ident . '_icon', 'icon-group'),
             'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_groups'),
         ];
     }
@@ -141,10 +141,10 @@ class Settings extends Model
         }
 
         return [
-            'label' => self::get($ident . '_label'),
-            'url' => self::get($ident . '_url'),
-            'order' => self::get($ident . '_order'),
-            'icon' => self::get($ident . '_icon'),
+            'label'       => self::get($ident . '_label'),
+            'url'         => self::get($ident . '_url'),
+            'order'       => self::get($ident . '_order'),
+            'icon'        => self::get($ident . '_icon'),
             'permissions' => self::get($ident . '_permissions', 'rainlab.users.*'),
         ];
     }
