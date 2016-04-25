@@ -10,23 +10,49 @@ class Plugin extends PluginBase
 {
     public $require = ['RainLab.User'];
 
+    public function pluginDetails()
+    {
+        return [
+            'name'        => 'vojtasvoboda.usersidemenu::lang.plugin.name',
+            'description' => 'vojtasvoboda.usersidemenu::lang.plugin.description',
+            'author'      => 'Vojta Svoboda',
+            'icon'        => 'icon-user',
+            'homepage'    => 'https://github.com/vojtasvoboda/oc-usersidemenu-plugin'
+        ];
+    }
+
+    public function registerSettings()
+    {
+        return [
+            'settings' => [
+                'label'       => 'vojtasvoboda.usersidemenu::lang.settings.label',
+                'description' => 'vojtasvoboda.usersidemenu::lang.settings.description',
+                'category'    => SettingsManager::CATEGORY_USERS,
+                'icon'        => 'icon-ellipsis-v',
+                'class'       => 'VojtaSvoboda\UserSideMenu\Models\Settings',
+                'order'       => 600,
+                'permissions' => ['rainlab.users.access_settings'],
+            ]
+        ];
+    }
+
     public function boot()
     {
-        // override backend menu
+        // Override backend menu
         Event::listen('backend.menu.extendItems', function($manager)
         {
-            // override main menu icon
+            // Override main menu icon
             if ($base = Settings::getBaseIconSettings()) {
                 $manager->addMainMenuItem('RainLab.User', 'user', [
-                    'label' => $base['label'],
-                    'url' => Backend::url($base['url']),
-                    'icon' => $base['icon'],
+                    'label'       => $base['label'],
+                    'url'         => Backend::url($base['url']),
+                    'icon'        => $base['icon'],
                     'permissions' => [$base['permissions']],
-                    'order' => intval($base['order']),
+                    'order'       => intval($base['order']),
                 ]);
             }
 
-            // add submenu to RainLab.User plugin
+            // Add submenu to RainLab.User plugin
             $icons = $this->getSideMenuItems();
             if (!empty($icons)) {
                 $manager->addSideMenuItems('RainLab.User', 'user', $icons);
@@ -37,6 +63,7 @@ class Plugin extends PluginBase
     private function getSideMenuItems()
     {
         $icons = [];
+
         if ($first = Settings::getFirstIconSettings()) {
             $icons['new_user'] = $this->getIconArray($first);
         }
@@ -59,26 +86,11 @@ class Plugin extends PluginBase
     private function getIconArray($data)
     {
         return [
-            'label' => $data['label'],
-            'url' => Backend::url($data['url']),
-            'icon' => $data['icon'],
+            'label'       => $data['label'],
+            'url'         => Backend::url($data['url']),
+            'icon'        => $data['icon'],
             'permissions' => [$data['permissions']],
-            'order' => intval($data['order']),
-        ];
-    }
-    
-    public function registerSettings()
-    {
-        return [
-            'settings' => [
-                'label' => 'User Side Menu',
-                'description' => 'Settings for User Side Menu',
-                'category' => SettingsManager::CATEGORY_USERS,
-                'icon' => 'icon-cog',
-                'class' => 'VojtaSvoboda\UserSideMenu\Models\Settings',
-                'order' => 600,
-                'permissions' => ['rainlab.users.access_settings'],
-            ]
+            'order'       => intval($data['order']),
         ];
     }
 }
