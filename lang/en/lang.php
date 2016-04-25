@@ -1,6 +1,15 @@
 <?php
 
 return [
+    'plugin' => [
+        'name' => 'User SideMenu',
+        'description' => 'Provide sidemenu for RainLab.User plugin.',
+    ],
+
+    'settings' => [
+        'label' => '',
+        'description' => '',
+    ],
 
     'label' => 'Icon label',
     'icon' => 'Icon image',

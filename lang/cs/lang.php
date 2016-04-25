@@ -1,6 +1,15 @@
 <?php
 
 return [
+    'plugin' => [
+        'name' => 'User SideMenu',
+        'description' => 'Provide sidemenu for RainLab.User plugin.',
+    ],
+
+    'settings' => [
+        'label' => 'User Side Menu',
+        'description' => 'Settings for User Side Menu',
+    ],
 
     'label' => 'Nadpis ikony',
     'icon' => 'Obrázek ikony',
