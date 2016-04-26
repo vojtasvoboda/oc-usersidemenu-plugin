@@ -10,17 +10,6 @@ class Plugin extends PluginBase
 {
     public $require = ['RainLab.User'];
 
-    public function pluginDetails()
-    {
-        return [
-            'name'        => 'vojtasvoboda.usersidemenu::lang.plugin.name',
-            'description' => 'vojtasvoboda.usersidemenu::lang.plugin.description',
-            'author'      => 'Vojta Svoboda',
-            'icon'        => 'icon-user',
-            'homepage'    => 'https://github.com/vojtasvoboda/oc-usersidemenu-plugin'
-        ];
-    }
-
     public function registerSettings()
     {
         return [
