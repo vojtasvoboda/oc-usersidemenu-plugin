@@ -8,7 +8,9 @@ use VojtaSvoboda\UserSideMenu\Models\Settings;
 
 class Plugin extends PluginBase
 {
-    public $require = ['RainLab.User'];
+    public $require = [
+        'RainLab.User',
+    ];
 
     public function registerSettings()
     {
