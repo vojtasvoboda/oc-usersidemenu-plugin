@@ -6,6 +6,12 @@ Adds side backend menu to [RainLab.User](http://octobercms.com/plugin/rainlab-us
 - show buttons for all users and user groups
 - add three extra buttons as you want
 
+Tested with the latest stable OctoberCMS build 349.
+
+## Dependencies
+
+- [RainLab.User](http://octobercms.com/plugin/rainlab-user) plugin
+
 ## Installation
 
 1. Install plugin [VojtaSvoboda.UserSideMenu](http://octobercms.com/plugin/vojtasvoboda-usersidemenu)
@@ -15,7 +21,7 @@ Adds side backend menu to [RainLab.User](http://octobercms.com/plugin/rainlab-us
 
 **Feel free to send pullrequest!**
 
-Please send Pull Request to master branch.
+Please send Pull Request to the master branch.
 
 ## License
 

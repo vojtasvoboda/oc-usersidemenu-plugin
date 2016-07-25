@@ -3,12 +3,12 @@
 return [
     'plugin' => [
         'name' => 'User SideMenu',
-        'description' => 'Provide sidemenu for RainLab.User plugin.',
+        'description' => 'Umožňuje změnit postranní menu v administraci uživatelů',
     ],
 
     'settings' => [
-        'label' => 'User Side Menu',
-        'description' => 'Settings for User Side Menu',
+        'label' => 'Postranní menu uživatelů',
+        'description' => 'Nastavení postranního menu v administraci',
     ],
 
     'label' => 'Nadpis ikony',
