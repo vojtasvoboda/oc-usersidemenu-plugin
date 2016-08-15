@@ -1,6 +1,9 @@
 {
     "name": "vojtasvoboda/oc-usersidemenu-plugin",
     "type": "october-plugin",
+    "extra": {
+        "installer-name": "usersidemenu"
+    },
     "description": "User Side Menu plugin for OctoberCMS",
     "homepage": "https://github.com/vojtasvoboda/oc-usersidemenu-plugin",
     "keywords": ["october", "plugin", "user", "sidemenu", "menu"],
