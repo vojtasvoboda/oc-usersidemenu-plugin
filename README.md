@@ -1,5 +1,9 @@
 # User SideMenu plugin for OctoberCMS
 
+[![Codacy](https://img.shields.io/codacy/5a46bdaebed640d8afd039eba72f311b.svg)](https://www.codacy.com/app/vojtasvoboda/oc-usersidemenu-plugin)
+[![Scrutinizer Coverage](https://img.shields.io/scrutinizer/g/vojtasvoboda/oc-usersidemenu-plugin.svg)](https://scrutinizer-ci.com/g/vojtasvoboda/oc-usersidemenu-plugin/?branch=master)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vojtasvoboda/oc-usersidemenu-plugin/blob/master/LICENSE)
+
 Adds side backend menu to [RainLab.User](http://octobercms.com/plugin/rainlab-user) plugin.
 
 - add button for adding new user
