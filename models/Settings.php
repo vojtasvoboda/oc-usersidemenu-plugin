@@ -44,17 +44,17 @@ class Settings extends Model
     public static function getFirstIconSettings()
     {
         $ident = 'first';
-        $enabled = self::get($ident . '_enabled', false);
+        $enabled = self::get($ident.'_enabled', false);
         if (!$enabled) {
             return null;
         }
 
         return [
-            'label'       => self::get($ident . '_label', 'rainlab.user::lang.users.new_user'),
-            'url'         => self::get($ident . '_url', 'rainlab/user/users/create'),
-            'order'       => self::get($ident . '_order', 100),
-            'icon'        => self::get($ident . '_icon', 'icon-plus'),
-            'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_users'),
+            'label'       => self::get($ident.'_label', 'rainlab.user::lang.users.new_user'),
+            'url'         => self::get($ident.'_url', 'rainlab/user/users/create'),
+            'order'       => self::get($ident.'_order', 100),
+            'icon'        => self::get($ident.'_icon', 'icon-plus'),
+            'permissions' => self::get($ident.'_permissions', 'rainlab.users.access_users'),
         ];
     }
 
@@ -66,17 +66,17 @@ class Settings extends Model
     public static function getSecondIconSettings()
     {
         $ident = 'second';
-        $enabled = self::get($ident . '_enabled', true);
+        $enabled = self::get($ident.'_enabled', true);
         if (!$enabled) {
             return null;
         }
 
         return [
-            'label'       => self::get($ident . '_label', 'rainlab.user::lang.users.menu_label'),
-            'url'         => self::get($ident . '_url', 'rainlab/user/users'),
-            'order'       => self::get($ident . '_order', 200),
-            'icon'        => self::get($ident . '_icon', 'icon-user'),
-            'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_users'),
+            'label'       => self::get($ident.'_label', 'rainlab.user::lang.users.menu_label'),
+            'url'         => self::get($ident.'_url', 'rainlab/user/users'),
+            'order'       => self::get($ident.'_order', 200),
+            'icon'        => self::get($ident.'_icon', 'icon-user'),
+            'permissions' => self::get($ident.'_permissions', 'rainlab.users.access_users'),
         ];
     }
 
@@ -88,17 +88,17 @@ class Settings extends Model
     public static function getThirdIconSettings()
     {
         $ident = 'third';
-        $enabled = self::get($ident . '_enabled', true);
+        $enabled = self::get($ident.'_enabled', true);
         if (!$enabled) {
             return null;
         }
 
         return [
-            'label'       => self::get($ident . '_label', 'rainlab.user::lang.groups.menu_label'),
-            'url'         => self::get($ident . '_url', 'rainlab/user/usergroups'),
-            'order'       => self::get($ident . '_order', 300),
-            'icon'        => self::get($ident . '_icon', 'icon-group'),
-            'permissions' => self::get($ident . '_permissions', 'rainlab.users.access_groups'),
+            'label'       => self::get($ident.'_label', 'rainlab.user::lang.groups.menu_label'),
+            'url'         => self::get($ident.'_url', 'rainlab/user/usergroups'),
+            'order'       => self::get($ident.'_order', 300),
+            'icon'        => self::get($ident.'_icon', 'icon-group'),
+            'permissions' => self::get($ident.'_permissions', 'rainlab.users.access_groups'),
         ];
     }
 
@@ -135,17 +135,17 @@ class Settings extends Model
      */
     private static function getIconSettings($ident)
     {
-        $enabled = self::get($ident . '_enabled', false);
+        $enabled = self::get($ident.'_enabled', false);
         if (!$enabled) {
             return null;
         }
 
         return [
-            'label'       => self::get($ident . '_label'),
-            'url'         => self::get($ident . '_url'),
-            'order'       => self::get($ident . '_order'),
-            'icon'        => self::get($ident . '_icon'),
-            'permissions' => self::get($ident . '_permissions', 'rainlab.users.*'),
+            'label'       => self::get($ident.'_label'),
+            'url'         => self::get($ident.'_url'),
+            'order'       => self::get($ident.'_order'),
+            'icon'        => self::get($ident.'_icon'),
+            'permissions' => self::get($ident.'_permissions', 'rainlab.users.*'),
         ];
     }
     

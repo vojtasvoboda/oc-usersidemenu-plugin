@@ -30,14 +30,14 @@ class Plugin extends PluginBase
     public function boot()
     {
         // Override backend menu
-        Event::listen('backend.menu.extendItems', function($manager)
-        {
+        Event::listen('backend.menu.extendItems', function($manager) {
             // Override main menu icon
             if ($base = Settings::getBaseIconSettings()) {
                 $manager->addMainMenuItem('RainLab.User', 'user', [
                     'label'       => $base['label'],
                     'url'         => Backend::url($base['url']),
                     'icon'        => $base['icon'],
+                    'iconSvg'     => null,
                     'permissions' => [$base['permissions']],
                     'order'       => intval($base['order']),
                 ]);
